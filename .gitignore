@@ -1,0 +1,12 @@
+Build
+Index
+.DS_Store
+
+*.xcuserdata
+*/xcuserdata/
+
+Pods
+DerivedData
+*/project.xcworkspace/
+*/contents.xcworkspacedata/
+UserInterfaceState.xcuserstate

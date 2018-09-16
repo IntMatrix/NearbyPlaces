@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C959948214D886800AD76DF /* Place+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C959947214D886800AD76DF /* Place+Image.swift */; };
+		4CDA73D62147EA280061669A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA73D52147EA280061669A /* AppDelegate.swift */; };
+		4CDA73D82147EA280061669A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA73D72147EA280061669A /* MapViewController.swift */; };
+		4CDA73DB2147EA280061669A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDA73D92147EA280061669A /* Main.storyboard */; };
+		4CDA73DD2147EA2A0061669A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDA73DC2147EA2A0061669A /* Assets.xcassets */; };
+		4CDA73E02147EA2A0061669A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDA73DE2147EA2A0061669A /* LaunchScreen.storyboard */; };
+		4CDA73E82147F7720061669A /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA73E72147F7720061669A /* PlaceAnnotation.swift */; };
+		4CDA73ED214806450061669A /* NearbyPlacesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA73EC214806450061669A /* NearbyPlacesAPI.swift */; };
+		4CDA73EF214808300061669A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA73EE214808300061669A /* NetworkService.swift */; };
+		4CDA73F121480A470061669A /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA73F021480A470061669A /* Place.swift */; };
+		4CDA73F3214811D00061669A /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA73F2214811D00061669A /* MapViewModel.swift */; };
+		4CDA73F5214839C20061669A /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA73F4214839C20061669A /* PlaceCell.swift */; };
+		4CDA73F921485F0D0061669A /* PlaceMarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA73F821485F0D0061669A /* PlaceMarkerAnnotationView.swift */; };
+		4CFADE14214B0D5600A177CF /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFADE13214B0D5600A177CF /* Address.swift */; };
+		6CA165C16651D71F374A2A19 /* Pods_NearbyPlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EEBA8E7FFCFECE98A7F7CC3 /* Pods_NearbyPlaces.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0755855B66F1C609392CF68E /* Pods-NearbyPlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyPlaces.release.xcconfig"; path = "Pods/Target Support Files/Pods-NearbyPlaces/Pods-NearbyPlaces.release.xcconfig"; sourceTree = "<group>"; };
+		3EEBA8E7FFCFECE98A7F7CC3 /* Pods_NearbyPlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyPlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C959947214D886800AD76DF /* Place+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+Image.swift"; sourceTree = "<group>"; };
+		4CDA73D22147EA280061669A /* NearbyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CDA73D52147EA280061669A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CDA73D72147EA280061669A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4CDA73DA2147EA280061669A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CDA73DC2147EA2A0061669A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CDA73DF2147EA2A0061669A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CDA73E12147EA2A0061669A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CDA73E72147F7720061669A /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
+		4CDA73EC214806450061669A /* NearbyPlacesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyPlacesAPI.swift; sourceTree = "<group>"; };
+		4CDA73EE214808300061669A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4CDA73F021480A470061669A /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		4CDA73F2214811D00061669A /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		4CDA73F4214839C20061669A /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		4CDA73F821485F0D0061669A /* PlaceMarkerAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMarkerAnnotationView.swift; sourceTree = "<group>"; };
+		4CFADE13214B0D5600A177CF /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		609121538A8EB21C0CDCFBC9 /* Pods-NearbyPlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyPlaces.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NearbyPlaces/Pods-NearbyPlaces.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CDA73CF2147EA280061669A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA165C16651D71F374A2A19 /* Pods_NearbyPlaces.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CDA73C92147EA280061669A = {
+			isa = PBXGroup;
+			children = (
+				4CDA73D42147EA280061669A /* NearbyPlaces */,
+				4CDA73D32147EA280061669A /* Products */,
+				72CDC3D6EA18C9062A54D052 /* Pods */,
+				B9EC31A0E106766B4BE5901D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4CDA73D32147EA280061669A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CDA73D22147EA280061669A /* NearbyPlaces.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CDA73D42147EA280061669A /* NearbyPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				4CDA73E9214804920061669A /* UI */,
+				4CDA73EA2148049E0061669A /* Models */,
+				4CDA73EB214804A80061669A /* Services */,
+				4CDA73D52147EA280061669A /* AppDelegate.swift */,
+				4CDA73D92147EA280061669A /* Main.storyboard */,
+				4CDA73DC2147EA2A0061669A /* Assets.xcassets */,
+				4CDA73DE2147EA2A0061669A /* LaunchScreen.storyboard */,
+				4CDA73E12147EA2A0061669A /* Info.plist */,
+			);
+			path = NearbyPlaces;
+			sourceTree = "<group>";
+		};
+		4CDA73E9214804920061669A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4CDA73D72147EA280061669A /* MapViewController.swift */,
+				4CDA73F2214811D00061669A /* MapViewModel.swift */,
+				4CDA73E72147F7720061669A /* PlaceAnnotation.swift */,
+				4CDA73F821485F0D0061669A /* PlaceMarkerAnnotationView.swift */,
+				4CDA73F4214839C20061669A /* PlaceCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4CDA73EA2148049E0061669A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CDA73F021480A470061669A /* Place.swift */,
+				4C959947214D886800AD76DF /* Place+Image.swift */,
+				4CFADE13214B0D5600A177CF /* Address.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4CDA73EB214804A80061669A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4CDA73EE214808300061669A /* NetworkService.swift */,
+				4CDA73EC214806450061669A /* NearbyPlacesAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		72CDC3D6EA18C9062A54D052 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				609121538A8EB21C0CDCFBC9 /* Pods-NearbyPlaces.debug.xcconfig */,
+				0755855B66F1C609392CF68E /* Pods-NearbyPlaces.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9EC31A0E106766B4BE5901D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EEBA8E7FFCFECE98A7F7CC3 /* Pods_NearbyPlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CDA73D12147EA280061669A /* NearbyPlaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CDA73E42147EA2A0061669A /* Build configuration list for PBXNativeTarget "NearbyPlaces" */;
+			buildPhases = (
+				217BE5F181FACBB91B05A263 /* [CP] Check Pods Manifest.lock */,
+				4CDA73CE2147EA280061669A /* Sources */,
+				4CDA73CF2147EA280061669A /* Frameworks */,
+				4CDA73D02147EA280061669A /* Resources */,
+				1A50A2F68513C21C48ECC36E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NearbyPlaces;
+			productName = NearbyPlaces;
+			productReference = 4CDA73D22147EA280061669A /* NearbyPlaces.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CDA73CA2147EA280061669A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Maria Deygin";
+				TargetAttributes = {
+					4CDA73D12147EA280061669A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 4CDA73CD2147EA280061669A /* Build configuration list for PBXProject "NearbyPlaces" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CDA73C92147EA280061669A;
+			productRefGroup = 4CDA73D32147EA280061669A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CDA73D12147EA280061669A /* NearbyPlaces */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CDA73D02147EA280061669A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDA73E02147EA2A0061669A /* LaunchScreen.storyboard in Resources */,
+				4CDA73DD2147EA2A0061669A /* Assets.xcassets in Resources */,
+				4CDA73DB2147EA280061669A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A50A2F68513C21C48ECC36E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NearbyPlaces/Pods-NearbyPlaces-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxKingfisher/RxKingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RxMKMapView/RxMKMapView.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxKingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxMKMapView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NearbyPlaces/Pods-NearbyPlaces-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		217BE5F181FACBB91B05A263 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NearbyPlaces-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CDA73CE2147EA280061669A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDA73EF214808300061669A /* NetworkService.swift in Sources */,
+				4CDA73D82147EA280061669A /* MapViewController.swift in Sources */,
+				4CDA73E82147F7720061669A /* PlaceAnnotation.swift in Sources */,
+				4CDA73F121480A470061669A /* Place.swift in Sources */,
+				4CDA73F3214811D00061669A /* MapViewModel.swift in Sources */,
+				4C959948214D886800AD76DF /* Place+Image.swift in Sources */,
+				4CDA73D62147EA280061669A /* AppDelegate.swift in Sources */,
+				4CDA73F921485F0D0061669A /* PlaceMarkerAnnotationView.swift in Sources */,
+				4CDA73ED214806450061669A /* NearbyPlacesAPI.swift in Sources */,
+				4CFADE14214B0D5600A177CF /* Address.swift in Sources */,
+				4CDA73F5214839C20061669A /* PlaceCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4CDA73D92147EA280061669A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CDA73DA2147EA280061669A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CDA73DE2147EA2A0061669A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CDA73DF2147EA2A0061669A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CDA73E22147EA2A0061669A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4CDA73E32147EA2A0061669A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CDA73E52147EA2A0061669A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 609121538A8EB21C0CDCFBC9 /* Pods-NearbyPlaces.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W2V9Q6NW2;
+				INFOPLIST_FILE = NearbyPlaces/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thenearbyplaces.NearbyPlaces;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CDA73E62147EA2A0061669A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0755855B66F1C609392CF68E /* Pods-NearbyPlaces.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9W2V9Q6NW2;
+				INFOPLIST_FILE = NearbyPlaces/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = thenearbyplaces.NearbyPlaces;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CDA73CD2147EA280061669A /* Build configuration list for PBXProject "NearbyPlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CDA73E22147EA2A0061669A /* Debug */,
+				4CDA73E32147EA2A0061669A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CDA73E42147EA2A0061669A /* Build configuration list for PBXNativeTarget "NearbyPlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CDA73E52147EA2A0061669A /* Debug */,
+				4CDA73E62147EA2A0061669A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CDA73CA2147EA280061669A /* Project object */;
+}
